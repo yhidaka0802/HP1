@@ -93,13 +93,14 @@ li {
 
 .contact h3 {
   font-size: 50px;
-  color: rgb(189, 120, 230);
-  text-align: center;
+  text-align: left;
+  margin-left: 20%;
 }
 
 .contact h3 small {
   font-size: 20px;
-  color: #555;
+  color: rgb(189, 129, 230);
+  margin-left: 20px;
 }
 
 .form {

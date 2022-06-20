@@ -6,14 +6,14 @@
 
 .news {
   width: 70%;
-  margin: 0 auto 100px;
-  padding: 50px 0;
+  margin: 0 auto;
+  padding: 100px 0 250px;
   text-align: center;
 }
 
 .news h3 {
   display: inline-block;
-  font-size:  40px;
+  font-size:  50px;
   font-weight: bold;
   line-height: 1;
   margin-right: 80px;
@@ -52,36 +52,50 @@
   display: inline-block;
   vertical-align: top;
 }
+
 .feature {
   width: 80%;
   margin: 0px auto;
 }
+.feature_title {
+  margin: auto;
+  background-color: rgb(71, 143, 175);
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.feature_title h3 {
+  color: white;
+  font-size: 50px;
+  vertical-align: middle;
+}
 
 .feature_bg img {
   display: inline-block;
-  width: 50%;
+  width: 40%;
   float: left;
+  position: relative;
+  bottom: 30px;
+  left: 80px;
 }
 
 .feature_text {
   display: inline-block;
   width: 50%;
+  float: right;
+  margin-right: 40px;
 }
 
 .feature_text h4 {
-  padding: 15% 0 0 15%;
-  font-size: 50px;
-  color: rgb(189, 120, 230);
-}
-
-.feature_text small {
-  padding-left: 15%;
-  font-size: 20px;
-  font-weight: bold;
+  padding: 10%;
+  font-size: 32px;
+  color: rgb(71, 143, 175);
 }
 
 .feature_text p {
-  padding: 10%;
+  padding: 5%;
 }
 
 .service {
@@ -91,38 +105,43 @@
 }
 
 .service h3 {
-  text-align: center;
+  color: #fff;
+  text-align: left;
+  margin-left: 20%;
   font-size: 50px;
-  color: rgb(189, 120, 230);
   line-height: 1;
 }
 
 .service small {
+  margin-left: 20px;
   font-size: 20px;
-  color: #555;
+  color: rgb(189, 120, 230);
 }
 
 .service_bg {
-  background-image: url("../img/service_bg.png");
+  background-image: url("../img/service.png");
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 900px;
-  margin-top: 5%;
+  height: 600px;
+  padding: 5%;
   text-align: center;
 }
 
 .service_item {
   width: 25%;
   display: inline-block;
-  height: 600px;
-  margin-top: 100px;
+  margin-top: 5%;
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 50px 30px;
+  padding: 5px 5px;
+  border-radius: 8px;
 }
 
 .service_item img {
-  width: 250px;
+  width: 100%;
   height: 250px;
+  object-fit: cover;
   margin: 0 auto;
+  border-radius: 8px;
 }
 
 .service_item h4 {
@@ -142,18 +161,18 @@
 }
 
 .left {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .right {
-  margin-left: 30px;
+  margin-left: 20px;
 }
 
 .service .btn a {
   background: rgb(189, 120, 230);
   padding: 20px 60px;
   position: relative;
-  top: 50px;
+  bottom: 125px;
   left: calc(50% - 102px);
   color: #fff;
   font-size: 20px;
@@ -168,31 +187,50 @@
   display: inline-block;
   position: relative;
   width: 100%;
-  margin-top: 400px;
-}
-
-.recruit_inner {
-  width: 40%;
-  position: relative;
-  left: 100px;
-  top: 280px;
-  z-index: 1;
+  margin-top: 164px;
+  margin-bottom: 250px;
 }
 
 .recruit h3 {
   font-size: 50px;
-  color: rgb(189, 120, 230);
+  color: #555;
+  margin-left: 20%;
+  margin-bottom: 3%;
 }
 
 .recruit h3 small {
+  margin-left: 20px;
   font-size: 20px;
-  color: #555;
+  color: rgb(189, 120, 230);
   font-weight: bold;
+}
+
+.recruit_img {
+  text-align: center;
+}
+
+.recruit img {
+  margin-right: 3%;
+  width: 20%;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.recruit img:last-child{
+  margin-right: 0;
+}
+
+.recruit_inner {
+  margin: 5% 0 0 15%;
+  width: 45%;
+  position: relative;
+  z-index: 1;
 }
 
 .recruit h4 {
   font-size: 25px;
-  padding-top: 40px;
   color: #222;
 }
 
@@ -205,26 +243,18 @@
   background: rgb(189, 120, 230);
   padding: 20px 60px;
   position: relative;
-  top: 90px;
+  left: 115%;
+  bottom: 60px;
   color: #fff;
   font-size: 20px;
   border-radius: 4px;
 }
 
-.recruit img {
-  position: relative;
-  float: right;
-  width: 50%;
-  height: auto;
-  z-index: 1;
-  bottom: 500px;
-}
-
 .recruit_bg {
-  width: 80%;
-  height: 700px;
+  width: 85%;
+  height: 60vh;
   background-color: #eee;
   position: absolute;
-  top: 150px;
+  top: 40%;
   z-index: 0;
 }
