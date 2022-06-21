@@ -20,7 +20,13 @@ li {
 .header-all {
   width: 100%;
   position: relative;
-  height: 80px;
+}
+
+.header_inner {
+  width: 100%;
+  position: fixed;
+  z-index: 3;
+  background-color: white;
 }
 
 .header_title {
@@ -28,6 +34,7 @@ li {
   float: left;
   margin: 5px 20px;
 }
+
 .header_title img{
   object-fit: cover;
   width: 200px;
@@ -60,11 +67,13 @@ li {
 
 .top_inner {
   position: relative;
+  padding-top: 8.5vh;
 }
 
 .top_inner img {
   width: 100%;
-  height: 50vh;
+  height: 91.5vh;
+  object-fit: cover;
 }
 
 .top_title {
@@ -112,6 +121,7 @@ li {
   display: inline-block;
   width: 30%;
   line-height: 2;
+  font-size: 18px;
 }
 
 input,textarea{
@@ -174,38 +184,52 @@ footer {
 }
 
 .footer_inner p {
-  width: 150px;
-  font-size: 10px;
+  width: 400px;
+  font-size: 18px;
 }
 
 .footer_bg {
   width: 100%;
   float: right;
-  height: 300px;
+  height: 350px;
   background-color: #eee;
   position: relative;
   z-index: 0;
 }
 
+.footer_list {
+  padding: 50px;
+  position: relative;
+  left: 50%;
+}
+
 .footer_list ul {
-  float: right;
+  float: left;
   z-index: 1;
+  margin-right: 30px;
 }
 
 .footer_list ul::after {
   content: "";
-  position: absolute;
-  height: 300px;
-  border-left: 1px solid #ccc;
-  color: #555;
   top: 0;
 }
 
 .footer_list ul li {
+  text-align: center;
   width: 200px;
-  padding: 20px 0 0 40px;
+  padding: 20px 40px;
+  margin-bottom: 10px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 18px;
+  background-color: rgb(71, 143, 175);
+  border-radius: 8px;
+}
+.footer_list ul .color{
+  background-color: #F12B00;
+}
+
+.footer_list ul li a {
+  color: #fff;
 }
 
 .copyright {
@@ -213,4 +237,6 @@ footer {
   font-size: 5px;
   font-weight: bold;
   padding: 10px;
+  background-color: #555;
+  color: #fff;
 }

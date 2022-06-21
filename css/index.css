@@ -86,6 +86,7 @@
   width: 50%;
   float: right;
   margin-right: 40px;
+  font-size: 18px;
 }
 
 .feature_text h4 {
@@ -105,7 +106,10 @@
 }
 
 .service h3 {
-  color: #fff;
+  /* padding: 10px 20px;
+  width: 320px;
+  background-color: rgba(0, 0, 0, 0.6); */
+  color: #555;
   text-align: left;
   margin-left: 20%;
   font-size: 50px;
@@ -122,6 +126,8 @@
   background-image: url("../img/service.png");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.4);
+  background-blend-mode: lighten;
   height: 600px;
   padding: 5%;
   text-align: center;
@@ -131,7 +137,7 @@
   width: 25%;
   display: inline-block;
   margin-top: 5%;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 5px 5px;
   border-radius: 8px;
 }
@@ -145,18 +151,19 @@
 }
 
 .service_item h4 {
-  font-size: 30px;
+  font-size: 32px;
   padding-top: 20px;
 }
 
 .service_item small{
-  font-size: 13px;
+  font-size: 12px;
   color: rgb(189, 120, 230);
   font-weight: bold;
+  margin: auto;
 }
 
 .service_item p {
-  padding: 10px;
+  padding: 18px;
   line-height: 2;
 }
 
@@ -172,10 +179,10 @@
   background: rgb(189, 120, 230);
   padding: 20px 60px;
   position: relative;
-  bottom: 125px;
+  bottom: 130px;
   left: calc(50% - 102px);
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
 }
 
@@ -224,17 +231,18 @@
 
 .recruit_inner {
   margin: 5% 0 0 15%;
-  width: 45%;
+  width: 60%;
   position: relative;
   z-index: 1;
 }
 
 .recruit h4 {
-  font-size: 25px;
+  font-size: 32px;
   color: #222;
 }
 
 .recruit p {
+  font-size: 18px;
   line-height: 2.5;
 }
 
@@ -243,11 +251,15 @@
   background: rgb(189, 120, 230);
   padding: 20px 60px;
   position: relative;
-  left: 115%;
-  bottom: 60px;
+  left: 75%;
+  bottom: 15px;
   color: #fff;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
+}
+
+.recruit .btn:hover {
+  opacity: 0.8;
 }
 
 .recruit_bg {
